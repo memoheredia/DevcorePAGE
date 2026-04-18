@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevCore</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(2,6,23,0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    color: #38bdf8;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #0ea5e9, #020617);
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero p {
+    margin: 15px 0;
+    color: #cbd5f5;
+}
+
+.btn {
+    background: #38bdf8;
+    padding: 12px 25px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* SECCIONES */
+.section {
+    padding: 70px 20px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+/* HISTORIA */
+.historia p {
+    max-width: 700px;
+    margin: auto;
+    color: #cbd5f5;
+}
+
+/* SERVICIOS */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #334155;
+}
+
+/* EQUIPO */
+.team img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* CONTACTO */
+.contact p {
+    margin: 5px 0;
+    color: #cbd5f5;
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>DevCore</h1>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h2>Impulsamos tu negocio con tecnología</h2>
+        <p>Sistemas modernos para ventas, clientes y control empresarial</p>
+        <a href="https://youtube.com/shorts/mmTLzMSzmbA" target="_blank" class="btn">
+    Ver video
+</a>
+    </div>
+</section>
+
+<!-- HISTORIA -->
+<section id="historia" class="section historia">
+    <h2>Nuestra Historia</h2>
+    <p>
+        DevCore nace en Barahona al identificar la necesidad de negocios que operaban 
+        sin sistemas digitales para registrar pagos. A partir de esta realidad, se 
+        reunió un equipo de estudiantes universitarios con el objetivo de desarrollar 
+        soluciones tecnológicas que permitan a las empresas crecer, organizarse y 
+        modernizarse.
+    </p>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="section">
+    <h2>Servicios</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Desarrollo Web</h3>
+            <p>Diseñamos páginas rápidas, modernas y adaptadas a cualquier dispositivo.</p>
+        </div>
+        <div class="card">
+            <h3>Sistemas de Gestión</h3>
+            <p>Control de ventas, clientes, inventario y facturación.</p>
+        </div>
+        <div class="card">
+            <h3>Soporte Técnico</h3>
+            <p>Mantenimiento, instalación y solución de problemas tecnológicos.</p>
+        </div>
+    </div>
+</section>
+
+<!-- EQUIPO -->
+<section id="equipo" class="section team">
+    <h2>Nuestro Equipo</h2>
+    <img src="Gráfico Organigrama Equipo Profesional Minimalista Multicolor.png" alt="Equipo DevCore">
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section contact">
+    <h2>Contacto</h2>
+    <p>Email: devcore@gmail.com</p>
+    <p>Tel: 809-534-7871</p>
+</section>
+
+<footer>
+    <p>© 2026 DevCore - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
